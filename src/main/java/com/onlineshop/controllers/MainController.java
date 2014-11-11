@@ -25,4 +25,12 @@ public class MainController {
         model.addAttribute("name", name);
         return "name";
     }
+
+    @RequestMapping(value = "/{name}/{surname}", method = RequestMethod.GET)
+    public String namePage(@PathVariable String name, @PathVariable String surname, ModelMap model) {
+
+        model.addAttribute("surname", surname);
+        model.addAttribute("name", name);
+        return "name-surname";
+    }
 }
