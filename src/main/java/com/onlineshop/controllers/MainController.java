@@ -13,19 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String indexPage(ModelMap model) {
+    public String indexPage() {
 
-        model.addAttribute("message", "Hello, World!");
         return "index";
     }
 
-
-
-    @RequestMapping(value = "/{name}/{surname}", method = RequestMethod.GET)
-    public String namePage(@PathVariable String name, @PathVariable String surname, ModelMap model) {
-
-        model.addAttribute("surname", surname);
-        model.addAttribute("name", name);
-        return "name-surname";
-    }
 }
