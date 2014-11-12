@@ -11,7 +11,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>ЯМА - Интернет магазин техники</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,6 +19,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="res/stylesheet.css">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="res/prefixfree.min.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&amp;subset=latin,cyrillic-ext"
           rel="stylesheet" type="text/css">
@@ -51,8 +52,34 @@
     </div>
 </div>
 
+<div class="hero-unit container ericpol-possib" align="center">
 
-<div id="carousel-example-generic" class="carousel slide" data-interval="6000" data-ride="carousel">
+    <div class="col-md-3">
+        <h2>Доставка</h2>
+        <p class="small">Доставка за сутки по Бресту и Беларуси</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Оплата</h2>
+        <p class="small">0% платежи от регионов, работает с юр. лицами</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Гарантия</h2>
+        <p class="small">1 год на всю технику</p>
+    </div>
+    <div class="col-md-3">
+        <h2>Сервис</h2>
+        <p class="small">Сервис/Моддинг/Трейдин</p>
+    </div>
+
+</div>
+
+<form class="ericpol-search container">
+    <div>
+        <input type="text" class="" placeholder="Поиск товара"><input type="submit" value="Поиск"/>
+    </div>
+</form>
+
+<div id="carousel-example-generic" class="carousel slide container" data-interval="6000" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -64,22 +91,16 @@
         <div class="item active" style="background-image: url(res/apple-imac-brend-stol.jpg);">
             <!--<img src="res/apple-imac-brend-stol.jpg">-->
             <div class="carousel-caption">
-                <h2>Title</h2>
-                <p>Description</p>
             </div>
         </div>
 
-        <div class="item">
-            <img src="http://placehold.it/1920x600" alt="...">
+        <div class="item" style="background-image: url(res/sony-vaio-xperia.jpg);">
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
             </div>
         </div>
 
-        <div class="item">
-            <img src="http://placehold.it/1920x600" alt="...">
+        <div class="item" style="background-image: url(res/sony-vaio-noutbuk.jpg);">
             <div class="carousel-caption">
-                <h3>Caption Text</h3>
             </div>
         </div>
 
@@ -88,6 +109,9 @@
     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
+
+
+
 
 
 <div class="container ericpol-footer">
