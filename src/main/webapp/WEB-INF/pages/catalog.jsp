@@ -53,5 +53,33 @@
     </div>
 </div>
 
+<div class="container"></div>
+
+<div class="container ericpol-footer">
+    <div class="col-md-4" align="left">
+        <div class="title">Контакты</div>
+        <ul>
+            <li>+375(25)123-45-67</li>
+            <li>shop@jama.com</li>
+            <li>ул. Держинского, д.52</li>
+        </ul>
+    </div>
+    <div class="col-md-4" align="center">
+        <div class="title">Тех. поддержка</div>
+        <ul>
+            <li>+375(162)98-76-54</li>
+            <li>support@jama.com</li>
+        </ul>
+    </div>
+    <div class="col-md-4" align="right">
+        <img src="res/logo-footer.png" alt="">
+        <br>Designed by
+        <br>
+        <a href="https://github.com/ArtyomShaitor/OnlineShopEricpol/"><img src="res/github-icon.png" alt="">Ericpol Probationers</a>
+    </div>
+</div>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
