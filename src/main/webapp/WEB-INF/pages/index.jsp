@@ -111,7 +111,82 @@
 </div>
 
 
+<div class="container ericpol-fast-search">
+    <h3>Поиск по бренду</h3>
 
+    <div class="hero-unit">
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li role="presentation"><a href="">Apple</a></li>
+                <li role="presentation"><a href="">Acer</a></li>
+                <li role="presentation"><a href="">Asus</a></li>
+                <li role="presentation"><a href="">Toshiba</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li><a href="">Sony</a></li>
+                <li><a href="">Samsung</a></li>
+                <li><a href="">Simiens</a></li>
+                <li><a href="">Lenovo</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li><a href="">MSI</a></li>
+                <li><a href="">LG</a></li>
+                <li><a href="">HP</a></li>
+                <li><a href="">Fujitsu</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li><a href="">Dell</a></li>
+                <li><a href="">Gigabyte</a></li>
+                <li><a href="">Packard Bell</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container ericpol-fast-search">
+    <h3>Поиск по типу продуцкии</h3>
+
+    <div class="hero-unit">
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li role="presentation"><a href="">Мыши</a></li>
+                <li role="presentation"><a href="">Клавиатуры</a></li>
+                <li role="presentation"><a href="">Мониторы</a></li>
+                <li role="presentation"><a href="">Принтеры</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li role="presentation"><a href="">MP3-плеееры</a></li>
+                <li role="presentation"><a href="">Наушники</a></li>
+                <li role="presentation"><a href="">Музыкальные центры</a></li>
+                <li role="presentation"><a href="">Колонки</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li role="presentation"><a href="">Чехлы</a></li>
+                <li role="presentation"><a href="">Мобильные телефоны</a></li>
+                <li role="presentation"><a href="">Кабели</a></li>
+                <li role="presentation"><a href="">Гарнитуры</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 nav">
+            <ul class="list-unstyled">
+                <li role="presentation"><a href="">Компьютеры</a></li>
+                <li role="presentation"><a href="">Ноутбуки</a></li>
+                <li role="presentation"><a href="">Моноблоки</a></li>
+                <li role="presentation"><a href="">Сумки</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 <div class="container ericpol-footer">

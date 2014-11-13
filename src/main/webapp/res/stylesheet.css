@@ -72,6 +72,10 @@ body, html {
         width:165px;
     }
 
+    .ericpol-fast-search .hero-unit {
+        height:482px !important;
+    }
+
 
 }
 
@@ -220,14 +224,39 @@ body, html {
 
 }
 
+.ericpol-fast-search {
+    margin:10px auto 40px auto;
+}
+
+.ericpol-fast-search h3 {
+    padding:0px 0px 10px 0px;
+    margin:0px;
+}
+
+.ericpol-fast-search .hero-unit {
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.1);
+    border-right:0px;
+    height:120px;
+}
+
+.ericpol-fast-search .nav {
+    border:0px;
+    border-right:1px solid rgba(0,0,0,0.1);
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    height:120px;
+    box-sizing: border-box;
+    padding:20px;
+}
+
 .ericpol-footer {
     border-top:1px solid rgba(0,0,0,0.15);
     color:rgba(0,0,0,0.6);
 }
 
 .container.ericpol-footer > div {
-    height:100px;
-    padding:14px 0px;
+    height:150px;
+    padding:14px 0px 30px 0px;
 }
 
 .container.ericpol-footer > div > .title {
