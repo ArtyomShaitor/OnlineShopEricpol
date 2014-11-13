@@ -18,4 +18,9 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping(value = "/Catalog", method = RequestMethod.GET)
+    public String catalogPage(){
+        return "catalog";
+    }
+
 }

@@ -45,6 +45,9 @@
                     <a href="#">Главная</a>
                 </li>
                 <li>
+                    <a href="http://localhost:8080/Catalog">Каталог</a>
+                </li>
+                <li>
                     <a href="#">Корзина</a>
                 </li>
             </ul>
