@@ -29,7 +29,7 @@
 <div class="navbar navbar-default navbar-static-top navbar-inverse ericpol-header">
     <div class="container">
         <div class="navbar-header">
-            <a type="button" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
+            <a type="button" href="http://localhost:8080/" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
                data-target=".navbar-collapse"><img src="res/menu-button-icon.gif" alt=""></a>
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="ericpol-header-active">
-                    <a href="#">Главная</a>
+                    <a href="http://localhost:8080/">Главная</a>
                 </li>
                 <li>
                     <a href="http://localhost:8080/Catalog">Каталог</a>
@@ -216,13 +216,7 @@
     </div>
 </div>
 <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script>
-    $(".navbar-brand a").click(function(){
-        return false;
-    })
 
-
-</script>
 </body>
 
 </html>
