@@ -1,11 +1,12 @@
 package com.onlineshop.classes;
 
+import java.io.Serializable;
 import java.util.Set;
 import java.util.HashSet;
 /**
  * Created by HOME on 11.11.2014.
  */
-public class admins {
+public class admins implements Serializable{
     private Long id;
     private String login;
     private byte password;
