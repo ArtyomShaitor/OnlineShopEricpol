@@ -55,8 +55,14 @@
 </div>
 
 <div class="container ericpol-catalog-container">
+    <form class="ericpol-search container">
+        <div>
+            <input type="text" class="" placeholder="Поиск товара" value="Sony"><input type="submit" value="Поиск"/>
+        </div>
+    </form>
+
     <div class="col-md-4 left">
-        <div class="block sticky">
+        <div class="block sticky search-page">
             <div class="sort" style="border-bottom: 1px solid rgba(0,0,0,0.1);">
                 <table>
                     <tr>
@@ -94,6 +100,11 @@
     </div>
     <div class="col-md-8 right">
         <div class="block">
+            <div class="search-result">
+                Результаты поиска по запросу "Sony":
+            </div>
+        </div>
+        <div class="block" style="margin-top: 15px !important;">
             <div class="items-view-list">
                 <div class="item">
                     <img src="res/sony-vaio-noutbuk.jpg" alt=""/>
@@ -182,7 +193,7 @@
     };
 
     initScroll = function (){
-        if ( $(window).scrollTop() > 60 ) $(".left .block").addClass("sticky"); else $(".left .block").removeClass("sticky");
+        if ( $(window).scrollTop() > 122 ) $(".left .block").addClass("sticky"); else $(".left .block").removeClass("sticky");
     };
 
 </script>

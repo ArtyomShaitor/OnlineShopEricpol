@@ -15,13 +15,22 @@ public class MainController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String indexPage() {
-
         return "index";
     }
 
     @RequestMapping(value = "/Catalog", method = RequestMethod.GET)
     public String catalogPage(){
         return "catalog";
+    }
+
+    @RequestMapping(value = "/Catalog/{title}", method = RequestMethod.GET)
+    public String catalogItemPage(@PathVariable String title){
+        return "catalog-item";
+    }
+
+    @RequestMapping(value = "/Search", method = RequestMethod.GET)
+    public String searchPage(){
+        return "search";
     }
 
 }

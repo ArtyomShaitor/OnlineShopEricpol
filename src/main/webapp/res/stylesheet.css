@@ -34,7 +34,7 @@ body, html {
 
 }
 
-@media (max-width: 989px){
+@media (max-width: 989px) {
     .col-md-4 {
         text-align: center;
         margin-bottom: 30px !important;
@@ -45,12 +45,12 @@ body, html {
     }
 
     .container {
-        width:90%;
-        padding:0px !important;
+        width: 90%;
+        padding: 0px !important;
     }
 
     .ericpol-search input[type=text] {
-        width:64%;
+        width: 64%;
         font-size: 14px !important;
         line-height: 19px !important;
     }
@@ -60,7 +60,7 @@ body, html {
     }
 
     .carousel-inner .item {
-        height:340px;
+        height: 340px;
     }
 
     .ericpol-possib .col-md-3 {
@@ -68,15 +68,49 @@ body, html {
     }
 
     .ericpol-possib h2 {
-        border-bottom: 1px solid rgba(0,0,0,0.2) !important;
-        width:165px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+        width: 165px;
     }
 
     .ericpol-fast-search .hero-unit {
-        height:482px !important;
+        height: 482px !important;
     }
 
+    .ericpol-catalog-container .left {
+        padding-right: 0px !important;
+    }
 
+    .ericpol-catalog-container .right {
+        padding-left: 0px !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item img {
+        width: 100% !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item .title {
+        font-size: 22px !important;
+        color: rgba(0, 0, 0, 0.8) !important;
+        margin: 10px 0px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item .description {
+        font-size: 13px !important;
+        color: rgba(0, 0, 0, 0.6) !important;
+        padding: 0px !important;
+        margin-top: 8px !important;
+        padding-top: 9px !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+        text-align: left !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list span {
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin-top: 15px !important;
+    }
 }
 
 .container {
@@ -247,6 +281,131 @@ body, html {
     height:120px;
     box-sizing: border-box;
     padding:20px;
+}
+
+.ericpol-catalog-container {
+    margin: 20px auto;
+}
+
+.ericpol-catalog-container > .left{
+    padding: 0px;
+    padding-right: 15px;
+}
+
+.ericpol-catalog-container > .left .block.sticky{
+    position: fixed;
+    top:20px;
+    padding: 0px;
+    width:284px;
+}
+
+.ericpol-catalog-container > .left .block.sticky.search-page{
+    position: fixed;
+    top:10px;
+    padding: 0px;
+    width:284px;
+}
+
+.ericpol-catalog-container > .right{
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.ericpol-catalog-container .block {
+    border:1px solid rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.ericpol-catalog-container .left table {
+    width:100%;
+    margin: 15px 0px;
+}
+
+.ericpol-catalog-container .left tr > td {
+    width:50%;
+    box-sizing: border-box;
+    padding:0px 10px;
+}
+
+.ericpol-catalog-container .left input {
+    width:50%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ericpol-catalog-container .left nav {
+    text-align: center !important;
+}
+
+.ericpol-catalog-container .left input, .ericpol-catalog-container select {
+    border:1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.ericpol-catalog-container .left tr > td select{
+    width:100%;
+}
+
+.ericpol-catalog-container .left tr > td:first-child {
+    text-align: left;
+}
+
+.ericpol-catalog-container .left tr > td:last-child {
+    text-align: right;
+}
+
+.ericpol-catalog-container .right .block .items-view-list .item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.ericpol-catalog-container .right .block .items-view-list .item img {
+    width:200px;
+    display: inline-block;
+}
+
+.ericpol-catalog-container .right .block .items-view-list .item .title {
+    display: inline-block;
+    font-size: 24px;
+    color: rgba(0,0,0,0.9);
+    vertical-align: top;
+    padding:0px;
+    margin-top:-8px;
+    padding-left: 10px;
+    width:340px;
+}
+
+.ericpol-catalog-container .right .block .items-view-list .item .description {
+    font-size: 14px;
+    color: rgba(0,0,0,0.6);
+    vertical-align: top;
+    padding:0px;
+    margin-top:10px;
+    padding-top: 10px;
+    border-top:1px solid rgba(0,0,0,0.1);
+    /*width:340px;*/
+}
+
+.ericpol-catalog-container .right .block .items-view-list .item a {
+    color:#3572b0;
+    font-size: 14px;
+    float:right;
+    margin-top: 15px;
+}
+
+.ericpol-catalog-container .right .block .items-view-list span {
+    font-size: 18px;
+    float:left;
+    margin-top: 15px;
+}
+
+.ericpol-catalog-container .right .block .search-result {
+    box-sizing: border-box;
+    padding:10px;
+    font-size: 20px;
 }
 
 .ericpol-footer {
