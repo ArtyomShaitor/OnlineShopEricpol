@@ -14,7 +14,6 @@ public class MainController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String indexPage() {
-
         return "index";
     }
 
@@ -23,10 +22,14 @@ public class MainController {
         return "catalog";
     }
 
+    @RequestMapping(value = "/Catalog/{title}", method = RequestMethod.GET)
+    public String catalogItemPage(@PathVariable String title){
+        return "catalog-item";
+    }
+
     @RequestMapping(value = "/Search", method = RequestMethod.GET)
     public String searchPage(){
         return "search";
     }
-
 
 }
