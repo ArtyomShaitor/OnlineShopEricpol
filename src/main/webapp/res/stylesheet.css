@@ -299,6 +299,13 @@ body, html {
     width:284px;
 }
 
+.ericpol-catalog-container > .left .block.sticky.search-page{
+    position: fixed;
+    top:10px;
+    padding: 0px;
+    width:284px;
+}
+
 .ericpol-catalog-container > .right{
     padding: 0px;
     padding-left: 15px;
@@ -393,6 +400,12 @@ body, html {
     font-size: 18px;
     float:left;
     margin-top: 15px;
+}
+
+.ericpol-catalog-container .right .block .search-result {
+    box-sizing: border-box;
+    padding:10px;
+    font-size: 20px;
 }
 
 .ericpol-footer {
