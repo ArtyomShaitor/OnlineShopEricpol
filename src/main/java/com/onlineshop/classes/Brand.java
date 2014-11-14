@@ -1,16 +1,26 @@
 package com.onlineshop.classes;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 import java.util.HashSet;
 /**
  * Created by HOME on 11.11.2014.
  */
-public class brands {
+@Entity
+@Table(name = "Brand")
+public class Brand implements Serializable {
+    @Id @GeneratedValue
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "title")
     private String title;
+
+    @Column(name = "brands")
     public Set brands = new HashSet();
 
-    public brands(){
+    public Brand(){
 
     }
 

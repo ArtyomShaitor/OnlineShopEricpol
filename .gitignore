@@ -1,1 +1,6 @@
 .idea/*
+target/classes/com/onlineshop/classes/Admin.class
+target/classes/com/onlineshop/classes/Brand.class
+target/classes/com/onlineshop/classes/Good.class
+target/classes/com/onlineshop/classes/Type.class
+target/classes/hibernate.cfg.xml
