@@ -1,5 +1,5 @@
 com\onlineshop\classes\goods.class
-com\onlineshop\classes\brands.class
 com\onlineshop\classes\types.class
 com\onlineshop\controllers\MainController.class
 com\onlineshop\classes\admins.class
+com\onlineshop\classes\brands.class
