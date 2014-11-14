@@ -6,7 +6,13 @@
 
 ## Directory-based project format:
 .idea/
+.idea/*
+*.idea/
+*.idea/*
 target/
+target/*
+*target/
+*target/*
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
