@@ -1,14 +1,14 @@
 package com.onlineshop.classes;
 
+import org.hibernate.validator.constraints.Length;
+
 import java.io.Serializable;
 import java.util.Set;
 import java.util.HashSet;
 import static javax.persistence.GenerationType.IDENTITY;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 /**
  * Created by HOME on 11.11.2014.
@@ -16,22 +16,37 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Admin")
 public class Admin implements Serializable{
-    @Id @GeneratedValue
+//    @Id @GeneratedValue
+//    @Column(name = "id")
+//    private Long id;
+//
+//    @Column(name = "login")
+//    private String login;
+//
+//    @Column(name = "password")
+//    private byte password;
+
+//    @Column(name = "goods")
+//    private Set goods = new HashSet();
+    @Id
+    @GeneratedValue
     @Column(name = "id")
+    @NotNull
     private Long id;
 
+    @NotNull
+    @Length(max = 30)
     @Column(name = "login")
     private String login;
 
+    @NotNull
+    @Length(max = 30)
     @Column(name = "password")
     private byte password;
 
-    @Column(name = "goods")
-    private Set goods = new HashSet();
-
-    public Admin(){
-
-    }
+    @OneToMany(mappedBy = "good")
+    private Set<Good> goods;
+    public Admin(){}
 
     public void setId(Long id) {
         this.id = id;
