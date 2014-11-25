@@ -1,5 +1,7 @@
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\goods.java
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\types.java
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\controllers\MainController.java
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\brands.java
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\admins.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\controllers\MainController.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\Brand.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\DataBase.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\HibernateUtil.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\Type.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\Admin.java
+C:\Users\HOME\Documents\OnlineShopEricpol3\src\main\java\com\onlineshop\classes\Good.java

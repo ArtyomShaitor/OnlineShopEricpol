@@ -21,9 +21,8 @@ public class Brand implements Serializable{
     @Column(name = "tittle")
     private String title;
 
-    @NotNull
-    @Column(name = "brands")
-    public Set<Brand> brands;
+    @OneToMany(mappedBy = "brand")
+    private Set<Good> goods;
 
     public Brand(){
 
@@ -35,17 +34,17 @@ public class Brand implements Serializable{
     public void setTitle(String title) {
         this.title = title;
     }
-    public void setBrands(Set brands){
-        this.brands = brands;
+    public void setGoods(Set goods){
+        this.goods = goods;
     }
 
-    private Long getId(){
+    public Long getId(){
         return id;
     }
-    private String getTitle(){
+    public String getTitle(){
         return title;
     }
-    private Set getBrands(){
-        return brands;
+    public Set getGoods(){
+        return goods;
     }
 }

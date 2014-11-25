@@ -2,9 +2,7 @@ package com.onlineshop.classes;
 
 //import java.util.ArrayList;
 //import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Set;
@@ -23,17 +21,17 @@ public class Good implements Serializable{
     @NotNull
     private Long id;
 
-    @Column(name = "type_id")
-    @NotNull
-    private Long type_id;
-
-    @Column(name = "admin_id")
-    @NotNull
-    private Long admin_id;
-
-    @Column(name = "brand_id")
-    @NotNull
-    private Long brand_id;
+//    @Column(name = "type_id")
+//    @NotNull
+//    private Long type_id;
+//
+//    @Column(name = "admin_id")
+//    @NotNull
+//    private Long admin_id;
+//
+//    @Column(name = "brand_id")
+//    @NotNull
+//    private Long brand_id;
 
     @Column(name = "price")
     @NotNull
@@ -51,17 +49,31 @@ public class Good implements Serializable{
     @NotNull
     private  String cover_url;
 
-    @Column(name = "admins")
-    @NotNull
-    private Set<Admin> admins;
 
-    @Column(name = "brands")
-    @NotNull
-    private Set<Brand> brands;
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private Type type;
 
-    @Column(name = "types")
-    @NotNull
-    private Set<Type> types;
+    @ManyToOne
+    @JoinColumn(name = "admin_id")
+    private Admin admin;
+
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private Brand brand;
+
+
+//    @Column(name = "admins")
+//    @NotNull
+//    private Set<Admin> admins;
+//
+//    @Column(name = "brands")
+//    @NotNull
+//    private Set<Brand> brands;
+//
+//    @Column(name = "types")
+//    @NotNull
+//    private Set<Type> types;
 
 
     public Good(){
@@ -71,26 +83,26 @@ public class Good implements Serializable{
         this.id = id;
     }
     public void setType_id(Long id){
-        this.type_id = id;
+        type.setId(id);
     }
     public void setAdmin_id(Long id){
-        this.admin_id = id;
+        this.admin.setId(id);
     }
     public void setBrand_id(Long id){
-        this.brand_id = id;
+        this.brand.setId(id);
     }
     public void setPrice(double price){
         this.price = price;
     }
-    public void setAdmins(Set admins){
-        this.admins = admins;
-    }
-    public void setBrand(Set brand) {
-        this.brands = brand;
-    }
-    public void setType(Set type) {
-        this.types = type;
-    }
+//    public void setAdmins(Set admins){
+//        this.admins = admins;
+//    }
+//    public void setBrand(Set brand) {
+//        this.brands = brand;
+//    }
+//    public void setType(Set type) {
+//        this.types = type;
+//    }
     public void setTitle(String title){
         this.title = title;
     }
@@ -105,26 +117,26 @@ public class Good implements Serializable{
         return id;
     }
     public Long getType_id(){
-        return type_id;
+        return type.getId();
     }
     public Long getAdmin_id(){
-        return admin_id;
+        return admin.getId();
     }
     public Long getBrand_id(){
-        return brand_id;
+        return brand.getId();
     }
     public double getPrice(){
         return price;
     }
-    public Set getAdmins(){
-        return admins;
-    }
-    public Set getBrand(){
-        return brands;
-    }
-    public Set getType(){
-        return types;
-    }
+//    public Set getAdmins(){
+//        return admins;
+//    }
+//    public Set getBrand(){
+//        return brands;
+//    }
+//    public Set getType(){
+//        return types;
+//    }
     public String getTitle(){
         return title;
     }

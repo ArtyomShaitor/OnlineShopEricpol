@@ -1,5 +1,7 @@
 package com.onlineshop.controllers;
 
+import com.onlineshop.classes.DataBase;
+import com.onlineshop.classes.Type;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +30,12 @@ public class MainController {
         return "catalog-item";
     }
 
+    @RequestMapping(value = "/Test")
+    public String testPage(){
+        DataBase db = new DataBase();
+        db.addType("Laptop3");
+        return "test";
+    }
 
     @RequestMapping(value = "/Search", method = RequestMethod.GET)
     public String searchPage(){

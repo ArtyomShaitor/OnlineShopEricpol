@@ -4,8 +4,6 @@ import org.hibernate.validator.constraints.Length;
 
 import java.io.Serializable;
 import java.util.Set;
-import java.util.HashSet;
-import static javax.persistence.GenerationType.IDENTITY;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -31,10 +29,11 @@ public class Admin implements Serializable{
     @NotNull
     @Length(max = 30)
     @Column(name = "password")
-    private byte password;
+    private String password;
 
-    @OneToMany(mappedBy = "good")
+    @OneToMany(mappedBy = "admin")
     private Set<Good> goods;
+
     public Admin(){}
 
     public void setId(Long id) {
@@ -43,10 +42,10 @@ public class Admin implements Serializable{
     public void setLogin(String login) {
         this.login = login;
     }
-    public void setPassword(byte password) {
+    public void setPassword(String password) {
         this.password = password;
     }
-    public void setGoods(Set goods){
+    public void setGoods(Set<Good> goods){
         this.goods = goods;
     }
 
@@ -56,7 +55,7 @@ public class Admin implements Serializable{
     public String getLogin(){
         return login;
     }
-    public byte getPassword(){
+    public String getPassword(){
         return password;
     }
     public Set getGoods(){
