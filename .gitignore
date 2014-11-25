@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+.idea/*
+target/classes/com/onlineshop/classes/Admin.class
+target/classes/com/onlineshop/classes/Brand.class
+target/classes/com/onlineshop/classes/Good.class
+target/classes/com/onlineshop/classes/Type.class
+target/classes/hibernate.cfg.xml
+=======
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
@@ -70,3 +78,4 @@ crashlytics-build.properties
 hs_err_pid*
 
 
+>>>>>>> a262306c6d6468004e69d93039a6f98376eba412

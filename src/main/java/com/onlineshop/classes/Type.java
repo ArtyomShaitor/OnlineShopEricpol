@@ -1,14 +1,22 @@
 package com.onlineshop.classes;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * Created by HOME on 11.11.2014.
  */
-public class types {
+@Entity
+@Table(name = "Type")
+public class Type implements Serializable {
+    @Id @GeneratedValue
+    @Column(name = "id")
     private Long id;
+
+    @Column(name = "title")
     private String title;
 
-
-    public types() {
+    public Type() {
     }
 
     public void setId(Long id) {

@@ -2,6 +2,8 @@ package com.onlineshop.classes;
 
 //import java.util.ArrayList;
 //import java.util.List;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Set;
 import java.util.HashSet;
 //import javax.persistence.*;
@@ -10,16 +12,45 @@ import java.util.HashSet;
 /**
  * Created by HOME on 11.11.2014.
  */
-public class goods {
-    private Long id, type_id, admin_id, brand_id;
+@Entity
+@Table(name = "Good")
+public class Good implements Serializable {
+    @Id @GeneratedValue
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "type_id")
+    private Long type_id;
+
+    @Column(name = "admin_id")
+    private Long admin_id;
+
+    @Column(name = "brand_id")
+    private Long brand_id;
+
+    @Column(name = "price")
     private double price;
-    private  String title, description, cover_url;
+
+    @Column(name = "title")
+    private  String title;
+
+    @Column(name = "description")
+    private  String description;
+
+    @Column(name = "cover_url")
+    private  String cover_url;
+
+    @Column(name = "admin")
     private Set admin = new HashSet();
+
+    @Column(name = "brand")
     private Set brand = new HashSet();
+
+    @Column(name = "type")
     private Set type = new HashSet();
 
 
-    public goods(){
+    public Good(){
     }
 
     public void setId(Long id){
