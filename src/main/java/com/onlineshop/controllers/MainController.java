@@ -28,6 +28,7 @@ public class MainController {
         return "catalog-item";
     }
 
+
     @RequestMapping(value = "/Search", method = RequestMethod.GET)
     public String searchPage(){
         return "search";

@@ -16,18 +16,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "Admin")
 public class Admin implements Serializable{
-//    @Id @GeneratedValue
-//    @Column(name = "id")
-//    private Long id;
-//
-//    @Column(name = "login")
-//    private String login;
-//
-//    @Column(name = "password")
-//    private byte password;
 
-//    @Column(name = "goods")
-//    private Set goods = new HashSet();
     @Id
     @GeneratedValue
     @Column(name = "id")
