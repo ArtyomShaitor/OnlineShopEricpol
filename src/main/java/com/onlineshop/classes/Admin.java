@@ -21,14 +21,14 @@ public class Admin implements Serializable{
     @NotNull
     private Long id;
 
-    @NotNull
     @Length(max = 30)
     @Column(name = "login")
+    @NotNull
     private String login;
 
-    @NotNull
     @Length(max = 30)
     @Column(name = "password")
+    @NotNull
     private String password;
 
     @OneToMany(mappedBy = "admin")

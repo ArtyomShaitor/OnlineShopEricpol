@@ -8,16 +8,26 @@ import org.hibernate.classic.Session;
  */
 public class DataBase {
 
+    private SessionFactory sessionFactory;
+    private Session session;
+
+    public DataBase(){
+
+    }
+
     public void addType(String title){
 
-        SessionFactory sf = HibernateUtil.getSessionFactory();
-        Session session = sf.openSession();
-        session.beginTransaction();
+//        sessionFactory = HibernateUtil.getSessionFactory();
+//        session = sessionFactory.openSession();
+//        session.beginTransaction();
         Type type = new Type();
         type.setTitle(title);
-        session.save(type);
-        session.getTransaction().commit();
-        session.close();
+//        session.save(type);
+//        session.getTransaction().commit();
+//        session.close();
+
+        sessionFactory = HibernateUtil.getSessionFactory();
+        sessionFactory.getCurrentSession().save(type);
 
 //
 //        SessionFactory sf1 = HibernateUtil.getSessionFactory();
