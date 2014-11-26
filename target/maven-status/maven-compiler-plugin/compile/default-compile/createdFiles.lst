@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 com\onlineshop\classes\Admin.class
 com\onlineshop\controllers\MainController.class
 com\onlineshop\classes\Brand.class
@@ -6,10 +5,3 @@ com\onlineshop\classes\Good.class
 com\onlineshop\classes\DataBase.class
 com\onlineshop\classes\HibernateUtil.class
 com\onlineshop\classes\Type.class
-=======
-com\onlineshop\classes\goods.class
-com\onlineshop\classes\types.class
-com\onlineshop\controllers\MainController.class
-com\onlineshop\classes\admins.class
-com\onlineshop\classes\brands.class
->>>>>>> f102b5243999e73084863cf0d401c2262f7a04a2

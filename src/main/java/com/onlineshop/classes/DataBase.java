@@ -8,6 +8,7 @@ import org.hibernate.classic.Session;
  */
 public class DataBase {
 
+    
     private SessionFactory sessionFactory;
     private Session session;
 
