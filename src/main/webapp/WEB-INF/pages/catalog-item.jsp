@@ -16,9 +16,9 @@
     <meta name="author" content="">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
           rel="stylesheet">
-    <link rel="stylesheet" href="res/stylesheet.css">
+    <link rel="stylesheet" href="../res/stylesheet.css">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="res/prefixfree.min.js"></script>
+    <script type="text/javascript" src="../res/prefixfree.min.js"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&amp;subset=latin,cyrillic-ext"
           rel="stylesheet" type="text/css">
@@ -29,13 +29,13 @@
     <div class="container">
         <div class="navbar-header">
             <a type="button" href="http://localhost:8080/" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
-               data-target=".navbar-collapse"><img src="res/menu-button-icon.gif" alt=""></a>
+               data-target=".navbar-collapse"><img src="../res/menu-button-icon.gif" alt=""></a>
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           <span class="navbar-brand">
-            <a href=""><img src="res/logo.png" alt=""></a>
+            <a href=""><img src="../res/logo.png" alt=""></a>
           </span>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -62,7 +62,7 @@
 
 <div class="ericpol-item-catalog-container container">
     <div class="title">Sony Vaio SVT1311MR1S</div>
-    <img src="res/sony-vaio-noutbuk.jpg" alt=""/>
+    <img src="../res/sony-vaio-noutbuk.jpg" alt=""/>
     <h3>Описание</h3>
     <div class="description">Ультрабук с 13" экраном, построенный на платформе Intel и снабженный гибридным либо твердотельным накопителем. Имеет традиционную конструкцию корпуса (магниевый сплав, алюминий), снабжен полным набором интерфейсов. </div>
     <h3>Цена</h3>
@@ -91,13 +91,14 @@
         </ul>
     </div>
     <div class="col-md-4" align="right">
-        <img src="res/logo-footer.png" alt="">
+        <img src="../res/logo-footer.png" alt="">
         <br>Designed by
         <br>
-        <a href="https://github.com/ArtyomShaitor/OnlineShopEricpol/"><img src="res/github-icon.png" alt="">Ericpol Probationers</a>
+        <a href="https://github.com/ArtyomShaitor/OnlineShopEricpol/"><img src="../res/github-icon.png" alt="">Ericpol Probationers</a>
     </div>
 </div>
 <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+

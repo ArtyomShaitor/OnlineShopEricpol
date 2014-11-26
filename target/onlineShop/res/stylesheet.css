@@ -64,7 +64,7 @@ body, html {
     }
 
     .ericpol-possib .col-md-3 {
-        padding: 20px auto !important;
+        padding: 20px 0px !important;
     }
 
     .ericpol-possib h2 {
@@ -78,6 +78,7 @@ body, html {
 
     .ericpol-catalog-container .left {
         padding-right: 0px !important;
+<<<<<<< HEAD
     }
 
     .ericpol-catalog-container .right {
@@ -106,6 +107,36 @@ body, html {
         text-align: left !important;
     }
 
+=======
+    }
+
+    .ericpol-catalog-container .right {
+        padding-left: 0px !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item img {
+        width: 100% !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item .title {
+        font-size: 22px !important;
+        color: rgba(0, 0, 0, 0.8) !important;
+        margin: 10px 0px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .ericpol-catalog-container .right .block .items-view-list .item .description {
+        font-size: 13px !important;
+        color: rgba(0, 0, 0, 0.6) !important;
+        padding: 0px !important;
+        margin-top: 8px !important;
+        padding-top: 9px !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+        text-align: left !important;
+    }
+
+>>>>>>> f102b5243999e73084863cf0d401c2262f7a04a2
     .ericpol-catalog-container .right .block .items-view-list span {
         font-size: 16px !important;
         font-weight: bold !important;
@@ -408,6 +439,54 @@ body, html {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.breadcrumb.container {
+    box-sizing: border-box;
+    padding:15px 35px !important;
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:0px !important;
+    margin-top: 20px;
+}
+
+.ericpol-item-catalog-container {
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.1);
+    padding: 15px 35px !important;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.ericpol-item-catalog-container .title {
+    font-size: 24px;
+    color:rgba(0,0,0,0.7);
+}
+
+.ericpol-item-catalog-container img {
+    width:100%;
+    margin: 15px auto;
+}
+
+.in-bucket {
+    border:1px solid rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 28px;
+    vertical-align: top;
+    color:rgba(255,255,255,1);
+    font-weight: 300;
+    transition: all 0.5s ease;
+    background: #428bca; /* Old browsers */
+    padding: 5px 35px;
+    margin: 20px 0px 40px 0px;
+}
+
+.in-bucket:hover {
+    background-color: #4997DC;
+}
+
+>>>>>>> f102b5243999e73084863cf0d401c2262f7a04a2
 .ericpol-footer {
     border-top:1px solid rgba(0,0,0,0.15);
     color:rgba(0,0,0,0.6);
