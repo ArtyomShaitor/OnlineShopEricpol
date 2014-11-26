@@ -1,7 +1,8 @@
 com\onlineshop\classes\Admin.class
 com\onlineshop\controllers\MainController.class
 com\onlineshop\classes\Brand.class
+com\onlineshop\DataBase\IDataBase.class
 com\onlineshop\classes\Good.class
-com\onlineshop\classes\DataBase.class
-com\onlineshop\classes\HibernateUtil.class
+com\onlineshop\DataBase\HibernateUtil.class
+com\onlineshop\DataBase\DataBase.class
 com\onlineshop\classes\Type.class

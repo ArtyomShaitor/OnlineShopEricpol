@@ -18,7 +18,7 @@ public class Brand implements Serializable{
     private Long id;
 
     @NotNull
-    @Column(name = "tittle")
+    @Column(name = "title")
     private String title;
 
     @OneToMany(mappedBy = "brand")
