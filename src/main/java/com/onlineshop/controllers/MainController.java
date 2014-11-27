@@ -14,7 +14,7 @@ import java.util.List;
  * Created by Artyom on 10.11.2014.
  */
 @Controller
-public class MainController {
+public class MainController{
 
     private DataBase db = new DataBase();
 
@@ -24,31 +24,66 @@ public class MainController {
     }
 
     @RequestMapping(value = "/Catalog", method = RequestMethod.GET)
-    public String catalogPage(){
+    public String catalogPage(Model model){
+        List<Good> list = db.getGoodsInInterval(0,0);
+        model.addAttribute("itemList", list);
         return "catalog";
     }
 
-    @RequestMapping(value = "/Catalog/{title}", method = RequestMethod.GET)
-    public String catalogItemPage(@PathVariable String title){
+
+    @RequestMapping(value = "/Catalog/Brand/{brand}", method = RequestMethod.GET)
+    public String brandPage(@PathVariable String brand, Model model){
+        List<Good> list = db.searchItemsByBrand(brand);
+        List<Type> listType = db.getTypesList();
+        List<Brand> listBrand = db.getBrandsList();
+
+        model.addAttribute("listType", listType);
+        model.addAttribute("listBrand", listBrand);
+        model.addAttribute("mainType", "");
+        model.addAttribute("mainBrand", brand);
+
+        model.addAttribute("itemListCount", list.size());
+        model.addAttribute("itemList", list);
+        return "catalog";
+    }
+
+    @RequestMapping(value = "/Catalog/Type/{type}", method = RequestMethod.GET)
+    public String typePage(@PathVariable String type, Model model){
+        List<Good> list = db.searchItemsByType(type);
+        List<Type> listType = db.getTypesList();
+        List<Brand> listBrand = db.getBrandsList();
+
+        model.addAttribute("listType", listType);
+        model.addAttribute("listBrand", listBrand);
+        model.addAttribute("mainType", type);
+        model.addAttribute("mainBrand", "");
+
+        model.addAttribute("itemListCount", list.size());
+        model.addAttribute("itemList", list);
+        return "catalog";
+    }
+
+    @RequestMapping(value = "/Catalog/Product/{id}", method = RequestMethod.GET)
+    public String catalogItemPage(@PathVariable Long id, Model model){
+        Good good = db.getCatalogItem(id);
+        model.addAttribute("item", good);
         return "catalog-item";
     }
 
-    @RequestMapping(value = "/Test")
-    public String testPage(){
+    @RequestMapping(value = "/Search/{query}", method = RequestMethod.GET)
+    public String searchByQuery(@PathVariable String query, Model model){
+        List<Good> list = db.searchItemsByQuery(query);
+        List<Type> listType = db.getTypesList();
+        List<Brand> listBrand = db.getBrandsList();
 
-        return "test";
-    }
+        model.addAttribute("listType", listType);
+        model.addAttribute("listBrand", listBrand);
+        model.addAttribute("mainType", "");
+        model.addAttribute("mainBrand", "");
 
-    @RequestMapping(value = "/Brand/{brand}", method = RequestMethod.GET)
-    public String brandPage(@PathVariable String brand, Model model){
-        List<Good> list = db.searchItemsByBrand(brand);
-
+        model.addAttribute("itemListCount", list.size());
+        model.addAttribute("queryText", query);
         model.addAttribute("itemList", list);
-        return "test";
-    }
-
-    @RequestMapping(value = "/Search", method = RequestMethod.GET)
-    public String searchPage(){
         return "search";
     }
 

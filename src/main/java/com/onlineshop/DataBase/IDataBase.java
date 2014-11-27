@@ -65,9 +65,50 @@ public interface IDataBase {
     public void removeGood(Long id);
 
     /**
+     * Получить список всех типов
+     * @return
+     */
+    public List<Type> getTypesList();
+
+    /**
+     * Получить список всех брендов
+     * @return
+     */
+    public List<Brand> getBrandsList();
+
+    /**
+     * Получить список товаров из каталога в диапазоне
+     * @param from от
+     * @param to до
+     * @return список товаров
+     */
+    public List<Good> getGoodsInInterval(int from, int to);
+
+    /**
      * Поиск товара по бренду
      * @param brandName название бренда
      * @return коллекция товаров
      */
     public List<Good> searchItemsByBrand(String brandName);
+
+    /**
+     * Поиск товара по типу
+     * @param typeName название бренда
+     * @return коллекция товаров
+     */
+    public List<Good> searchItemsByType(String typeName);
+
+    /**
+     * Поиск товара по запросу
+     * @param query запрос
+     * @return коллекция товаров
+     */
+    public List<Good> searchItemsByQuery(String query);
+
+    /**
+     * Получить полную информацию о товаре
+     * @param id название товара
+     * @return объект
+     */
+    public Good getCatalogItem(Long id);
 }

@@ -13,9 +13,8 @@
 </head>
 <body>
     <h1>List</h1>
-    ${itemList[0].title}
-    <%--<c:forEach items="${itemList}" var="item" >--%>
-        <%--${item.title}--%>
-    <%--</c:forEach>--%>
+    <c:forEach items="${itemList}" var="item" >
+        ${item.title}
+    </c:forEach>
 </body>
 </html>

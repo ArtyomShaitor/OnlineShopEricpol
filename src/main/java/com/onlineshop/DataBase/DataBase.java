@@ -1,8 +1,10 @@
 package com.onlineshop.DataBase;
 
+import org.apache.commons.lang.StringUtils;
 import com.onlineshop.classes.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.classic.Session;
+import org.hibernate.engine.JoinSequence;
 
 import java.util.List;
 import java.util.Map;
@@ -117,16 +119,92 @@ public class DataBase implements IDataBase{
     }
 
     /**
+     * Получить список всех типов
+     *
+     * @return
+     */
+    @Override
+    public List<Type> getTypesList() {
+        List<Type> list = (List<Type>) session.createSQLQuery("SELECT * FROM onlineshop_db.type").addEntity(Type.class).list();
+        return list;
+    }
+
+    /**
+     * Получить список всех брендов
+     *
+     * @return
+     */
+    @Override
+    public List<Brand> getBrandsList() {
+        List<Brand> list = (List<Brand>) session.createSQLQuery("SELECT * FROM onlineshop_db.brand").addEntity(Brand.class).list();
+        return list;
+    }
+
+    /**
+     * Получить список товаров из каталога в диапазоне
+     *
+     * @param from от
+     * @param to   до
+     * @return список товаров
+     */
+    @Override
+    public List<Good> getGoodsInInterval(int from, int to) {
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good").addEntity(Good.class).list();
+        return list;
+    }
+
+    /**
      * Поиск товара по бренду
      *
      * @param brandName название бренда
      * @return коллекция товаров
      */
     @Override
+    @SuppressWarnings("unchecked")
     public List<Good> searchItemsByBrand(String brandName) {
-//        session.beginTransaction();
-        List<Good> list = session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE brand_id=(SELECT id FROM onlineshop_db.brand WHERE brand.title=\""+brandName+"\")").list();
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE brand_id=(SELECT id FROM onlineshop_db.brand WHERE brand.title=\""+brandName+"\")").addEntity(Good.class).list();
         return list;
+    }
+
+    /**
+     * Поиск товара по типу
+     *
+     * @param typeName название бренда
+     * @return коллекция товаров
+     */
+    @Override
+    public List<Good> searchItemsByType(String typeName) {
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.title=\""+typeName+"\")").addEntity(Good.class).list();
+        return list;
+    }
+
+    /**
+     * Поиск товара по запросу
+     *
+     * @param query запрос
+     * @return коллекция товаров
+     */
+    @Override
+    public List<Good> searchItemsByQuery(String query) {
+        String[] stringArray = query.split("[,. ]");
+        for(int i = 0; i<stringArray.length; i++){
+            stringArray[i] = "'%"+stringArray[i]+"%'";
+        }
+        String stringQuery = StringUtils.join(stringArray, " or ");
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE title like " + stringQuery).addEntity(Good.class).list();
+        return list;
+    }
+
+    /**
+     * Получить полную информацию о товаре
+     *
+     * @param id название товара
+     * @return объект
+     */
+    @Override
+    public Good getCatalogItem(Long id) {
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE id=\""+id.toString()+"\"").addEntity(Good.class).list();
+        return list.get(0);
     }
 
     /**

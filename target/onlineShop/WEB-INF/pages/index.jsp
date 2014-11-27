@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -29,7 +31,7 @@
 <div class="navbar navbar-default navbar-static-top navbar-inverse ericpol-header">
     <div class="container">
         <div class="navbar-header">
-            <a type="button" href="http://localhost:8080/" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
+            <a type="button" href="<c:url value="/"/>" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
                data-target=".navbar-collapse"><img src="res/menu-button-icon.gif" alt=""></a>
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -42,10 +44,10 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="ericpol-header-active">
-                    <a href="http://localhost:8080/">Главная</a>
+                    <a href="<c:url value="/"/>">Главная</a>
                 </li>
                 <li>
-                    <a href="http://localhost:8080/Catalog">Каталог</a>
+                    <a href="<c:url value="/Catalog"/>">Каталог</a>
                 </li>
                 <li>
                     <a href="#">Корзина</a>
@@ -76,9 +78,9 @@
 
 </div>
 
-<form class="ericpol-search container">
+<form class="ericpol-search container" method="GET">
     <div>
-        <input type="text" class="" placeholder="Поиск товара"><input type="submit" value="Поиск"/>
+        <input type="text" class="" name="param" placeholder="Поиск товара"><input type="submit" value="Поиск"/>
     </div>
 </form>
 
@@ -120,10 +122,10 @@
     <div class="hero-unit">
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">Apple</a></li>
-                <li role="presentation"><a href="">Acer</a></li>
-                <li role="presentation"><a href="">Asus</a></li>
-                <li role="presentation"><a href="">Toshiba</a></li>
+                <li><a href="<c:url value="/Catalog/Brand/Apple"/>">Apple</a></li>
+                <li><a href="<c:url value="/Catalog/Brand/Acer"/>">Acer</a></li>
+                <li><a href="<c:url value="/Catalog/Brand/Asus"/>">Asus</a></li>
+                <li><a href="<c:url value="/Catalog/Brand/Toshiba"/>">Toshiba</a></li>
             </ul>
         </div>
         <div class="col-md-3 nav">
@@ -160,7 +162,7 @@
             <ul class="list-unstyled">
                 <li role="presentation"><a href="">Мыши</a></li>
                 <li role="presentation"><a href="">Клавиатуры</a></li>
-                <li role="presentation"><a href="">Мониторы</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog/Type/Мониторы"/>">Мониторы</a></li>
                 <li role="presentation"><a href="">Принтеры</a></li>
             </ul>
         </div>
@@ -183,8 +185,8 @@
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
                 <li role="presentation"><a href="">Компьютеры</a></li>
-                <li role="presentation"><a href="">Ноутбуки</a></li>
-                <li role="presentation"><a href="">Моноблоки</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog/Type/Ноутбуки"/>">Ноутбуки</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog/Type/Моноблоки"/>">Моноблоки</a></li>
                 <li role="presentation"><a href="">Сумки</a></li>
             </ul>
         </div>
