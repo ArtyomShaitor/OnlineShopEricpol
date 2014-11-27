@@ -1,13 +1,10 @@
 package com.onlineshop.controllers;
 
 import com.onlineshop.classes.DataBase;
-import com.onlineshop.classes.Type;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.hibernate.Session;
 
 /**
  * Created by Artyom on 10.11.2014.
