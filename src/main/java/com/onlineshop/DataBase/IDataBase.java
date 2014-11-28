@@ -85,6 +85,15 @@ public interface IDataBase {
     public List<Good> getGoodsInInterval(int from, int to);
 
     /**
+     * Получить список товаров по указанной цене
+     * @param list список
+     * @param min_price минимальная цена
+     * @param max_price максимальная цена
+     * @return коллекция
+     */
+    public List<Good> getGoodsBetweenPrice(List<Good> list, double min_price, double max_price);
+
+    /**
      * Поиск товара по бренду
      * @param brandName название бренда
      * @return коллекция товаров
@@ -97,6 +106,14 @@ public interface IDataBase {
      * @return коллекция товаров
      */
     public List<Good> searchItemsByType(String typeName);
+
+    /**
+     * Поиск товара по типу и бренду
+     * @param brandName название бренда
+     * @param typeName тип
+     * @return коллекция
+     */
+    public List<Good> searchItemsByBrandAndType(String brandName, String typeName);
 
     /**
      * Поиск товара по запросу

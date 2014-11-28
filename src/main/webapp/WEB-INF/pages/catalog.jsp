@@ -59,79 +59,82 @@
     <div class="col-md-4 left">
         <div class="block sticky">
             <div class="sort" style="border-bottom: 1px solid rgba(0,0,0,0.1);">
-                <table>
-                    <tr>
-                        <td><label for="brand">Производитель</label></td>
-                        <td>
-                            <select name="brand" id="brand">
-                                <c:choose>
-                                    <c:when test="${mainBrand == ''}">
-                                        <option value="all" selected>Выберите производителя</option>
-                                        <option value="null">--------</option>
-                                        <c:forEach items="${listBrand}" var="item">
-                                            <option value="keyboard">${item.title}</option>
-                                        </c:forEach>
-                                    </c:when>
+                <form action="<c:url value="/Catalog" />" method="get">
+                    <table>
+                        <tr>
+                            <td><label for="brand">Производитель</label></td>
+                            <td>
+                                <select name="Brand" id="brand">
+                                    <c:choose>
+                                        <c:when test="${mainBrand == ''}">
+                                            <option value="" selected>Выберите производителя</option>
+                                            <option value="">--------</option>
+                                            <c:forEach items="${listBrand}" var="item">
+                                                <option value="${item.title}">${item.title}</option>
+                                            </c:forEach>
+                                        </c:when>
 
-                                    <c:otherwise>
-                                        <option value="all">Выберите производителя</option>
-                                        <option value="null">--------</option>
-                                        <c:forEach items="${listBrand}" var="item">
-                                            <c:choose>
-                                                <c:when test="${mainBrand == item.title}">
-                                                    <option value="keyboard" selected>${item.title}</option>
-                                                </c:when>
-                                                <c:otherwise>
-                                                    <option value="keyboard">${item.title}</option>
-                                                </c:otherwise>
-                                            </c:choose>
-                                        </c:forEach>
-                                    </c:otherwise>
+                                        <c:otherwise>
+                                            <option value="">Выберите производителя</option>
+                                            <option value="">--------</option>
+                                            <c:forEach items="${listBrand}" var="item">
+                                                <c:choose>
+                                                    <c:when test="${mainBrand == item.title}">
+                                                        <option value="${item.title}" selected>${item.title}</option>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <option value="${item.title}">${item.title}</option>
+                                                    </c:otherwise>
+                                                </c:choose>
+                                            </c:forEach>
+                                        </c:otherwise>
 
-                                </c:choose>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="type">Тип</label></td>
-                        <td>
-                            <select name="type" id="type">
-                                <c:choose>
-                                    <c:when test="${mainType == ''}">
-                                        <option value="all" selected>Выберите тип</option>
-                                        <option value="null">--------</option>
-                                        <c:forEach items="${listType}" var="item">
-                                            <option value="keyboard">${item.title}</option>
-                                        </c:forEach>
-                                    </c:when>
+                                    </c:choose>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="type">Тип</label></td>
+                            <td>
+                                <select name="Type" id="type">
+                                    <c:choose>
+                                        <c:when test="${mainType == ''}">
+                                            <option value="" selected>Выберите тип</option>
+                                            <option value="">--------</option>
+                                            <c:forEach items="${listType}" var="item">
+                                                <option value="${item.key}">${item.title}</option>
+                                            </c:forEach>
+                                        </c:when>
 
-                                    <c:otherwise>
-                                        <option value="all">Выберите тип</option>
-                                        <option value="null">--------</option>
-                                        <c:forEach items="${listType}" var="item">
-                                            <c:choose>
-                                                <c:when test="${mainType == item.title}">
-                                                    <option value="keyboard" selected>${item.title}</option>
-                                                </c:when>
-                                                <c:otherwise>
-                                                    <option value="keyboard">${item.title}</option>
-                                                </c:otherwise>
-                                            </c:choose>
-                                        </c:forEach>
-                                    </c:otherwise>
+                                        <c:otherwise>
+                                            <option value="">Выберите тип</option>
+                                            <option value="">--------</option>
+                                            <c:forEach items="${listType}" var="item">
+                                                <c:choose>
+                                                    <c:when test="${mainType == item.key}">
+                                                        <option value="${item.key}" selected>${item.title}</option>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <option value="${item.key}">${item.title}</option>
+                                                    </c:otherwise>
+                                                </c:choose>
+                                            </c:forEach>
+                                        </c:otherwise>
 
-                                </c:choose>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label>Цена($)</label></td>
-                        <td>
-                            <input type="text" style="border-right:0px;" name="from" placeholder="От"/>
-                            <input type="text"  name="to" placeholder="До"/>
-                        </td>
-                    </tr>
-                </table>
+                                    </c:choose>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Цена($)</label></td>
+                            <td>
+                                <input type="text" style="border-right:0px;" name="MIN_PRICE" id="from" value="${minPrice}" placeholder="От"/>
+                                <input type="text"  name="MAX_PRICE" id="to" placeholder="До" value="${maxPrice}"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" class="in-bucket" value="Обновить"/>
+                </form>
             </div>
         </div>
     </div>
@@ -210,6 +213,32 @@
         if ( $(window).scrollTop() > 60 ) $(".left .block").addClass("sticky"); else $(".left .block").removeClass("sticky");
     };
 
+
 </script>
 </body>
 </html>
+
+<style>
+    .ericpol-catalog-container .right .block .items-view-list .item .title {
+        display: inline-block;
+        font-size: 24px;
+        color: rgba(0,0,0,0.9);
+        vertical-align: top;
+        padding: 0px;
+        margin-top: -8px;
+        padding-left: 20px;
+        width: 340px !important;
+    }
+
+    .ericpol-catalog-container > .left .block.sticky {
+        position: fixed;
+        top: 20px;
+        padding: 0px;
+        width: 284px;
+        height: 106px !important;
+    }
+
+    .in-bucket {
+        margin-top: 10px !important;
+    }
+</style>

@@ -5,15 +5,15 @@
   Time: 7:38
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=CP1251" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>РЇРњРђ - РРЅС‚РµСЂРЅРµС‚ РјР°РіР°Р·РёРЅ С‚РµС…РЅРёРєРё</title>
+    <meta charset="cp1251">
+    <title>ЯМА - Интернет магазин техники</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -44,13 +44,13 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="ericpol-header-active">
-                    <a href="<c:url value="/"/>">Р“Р»Р°РІРЅР°СЏ</a>
+                    <a href="<c:url value="/"/>">Главная</a>
                 </li>
                 <li>
-                    <a href="<c:url value="/Catalog"/>">РљР°С‚Р°Р»РѕРі</a>
+                    <a href="<c:url value="/Catalog"/>">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">РљРѕСЂР·РёРЅР°</a>
+                    <a href="#">Корзина</a>
                 </li>
             </ul>
         </div>
@@ -60,27 +60,27 @@
 <div class="hero-unit container ericpol-possib" align="center">
 
     <div class="col-md-3">
-        <h2>Р”РѕСЃС‚Р°РІРєР°</h2>
-        <p class="small">Р”РѕСЃС‚Р°РІРєР° Р·Р° СЃСѓС‚РєРё РїРѕ Р‘СЂРµСЃС‚Сѓ Рё Р‘РµР»Р°СЂСѓСЃРё</p>
+        <h2>Доставка</h2>
+        <p class="small">Доставка за сутки по Бресту и Беларуси</p>
     </div>
     <div class="col-md-3">
-        <h2>РћРїР»Р°С‚Р°</h2>
-        <p class="small">0% РїР»Р°С‚РµР¶Рё РѕС‚ СЂРµРіРёРѕРЅРѕРІ, СЂР°Р±РѕС‚Р°РµС‚ СЃ СЋСЂ. Р»РёС†Р°РјРё</p>
+        <h2>Оплата</h2>
+        <p class="small">0% платежи от регионов, работает с юр. лицами</p>
     </div>
     <div class="col-md-3">
-        <h2>Р“Р°СЂР°РЅС‚РёСЏ</h2>
-        <p class="small">1 РіРѕРґ РЅР° РІСЃСЋ С‚РµС…РЅРёРєСѓ</p>
+        <h2>Гарантия</h2>
+        <p class="small">1 год на всю технику</p>
     </div>
     <div class="col-md-3">
-        <h2>РЎРµСЂРІРёСЃ</h2>
-        <p class="small">РЎРµСЂРІРёСЃ/РњРѕРґРґРёРЅРі/РўСЂРµР№РґРёРЅ</p>
+        <h2>Сервис</h2>
+        <p class="small">Сервис/Моддинг/Трейдин</p>
     </div>
 
 </div>
 
 <form class="ericpol-search container" method="GET">
     <div>
-        <input type="text" class="" name="param" placeholder="РџРѕРёСЃРє С‚РѕРІР°СЂР°"><input type="submit" value="РџРѕРёСЃРє"/>
+        <input type="text" class="" name="param" placeholder="Поиск товара"><input type="submit" value="Поиск"/>
     </div>
 </form>
 
@@ -117,7 +117,7 @@
 
 
 <div class="container ericpol-fast-search">
-    <h3>РџРѕРёСЃРє РїРѕ Р±СЂРµРЅРґСѓ</h3>
+    <h3>Поиск по бренду</h3>
 
     <div class="hero-unit">
         <div class="col-md-3 nav">
@@ -155,39 +155,38 @@
 </div>
 
 <div class="container ericpol-fast-search">
-    <h3>РџРѕРёСЃРє РїРѕ С‚РёРїСѓ РїСЂРѕРґСѓС†РєРёРё</h3>
+    <h3>Поиск по типу продуцкии</h3>
 
     <div class="hero-unit">
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">РњС‹С€Рё</a></li>
-                <li role="presentation"><a href="">РљР»Р°РІРёР°С‚СѓСЂС‹</a></li>
-                <li role="presentation"><a href="<c:url value="/Catalog/Type/РњРѕРЅРёС‚РѕСЂС‹"/>">РњРѕРЅРёС‚РѕСЂС‹</a></li>
-                <li role="presentation"><a href="">РџСЂРёРЅС‚РµСЂС‹</a></li>
+                <li role="presentation"><a href="">Мыши</a></li>
+                <li role="presentation"><a href="">Клавиатуры</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog/Type/Мониторы"/>">Мониторы</a></li>
+                <li role="presentation"><a href="">Принтеры</a></li>
             </ul>
         </div>
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">MP3-РїР»РµРµРµСЂС‹</a></li>
-                <li role="presentation"><a href="">РќР°СѓС€РЅРёРєРё</a></li>
-                <li role="presentation"><a href="">РњСѓР·С‹РєР°Р»СЊРЅС‹Рµ С†РµРЅС‚СЂС‹</a></li>
-                <li role="presentation"><a href="">РљРѕР»РѕРЅРєРё</a></li>
+                <li role="presentation"><a href="">MP3-плеееры</a></li>
+                <li role="presentation"><a href="">Наушники</a></li>
+                <li role="presentation"><a href="">Музыкальные центры</a></li>
+                <li role="presentation"><a href="">Колонки</a></li>
             </ul>
         </div>
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">Р§РµС…Р»С‹</a></li>
-                <li role="presentation"><a href="">РњРѕР±РёР»СЊРЅС‹Рµ С‚РµР»РµС„РѕРЅС‹</a></li>
-                <li role="presentation"><a href="">РљР°Р±РµР»Рё</a></li>
-                <li role="presentation"><a href="">Р“Р°СЂРЅРёС‚СѓСЂС‹</a></li>
+                <li role="presentation"><a href="">Чехлы</a></li>
+                <li role="presentation"><a href="">Мобильные телефоны</a></li>
+                <li role="presentation"><a href="">Кабели</a></li>
+                <li role="presentation"><a href="">Гарнитуры</a></li>
             </ul>
         </div>
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">РљРѕРјРїСЊСЋС‚РµСЂС‹</a></li>
-                <li role="presentation"><a href="<c:url value="/Catalog/Type/РќРѕСѓС‚Р±СѓРєРё"/>">РќРѕСѓС‚Р±СѓРєРё</a></li>
-                <li role="presentation"><a href="<c:url value="/Catalog/Type/РњРѕРЅРѕР±Р»РѕРєРё"/>">РњРѕРЅРѕР±Р»РѕРєРё</a></li>
-                <li role="presentation"><a href="">РЎСѓРјРєРё</a></li>
+                <c:forEach items="${itemList}" var="item">
+                    <li role="presentation"><a href="<c:url value="/Catalog/Type/${item.key}"/>">${item.title}</a></li>
+                </c:forEach>
             </ul>
         </div>
     </div>
@@ -196,15 +195,15 @@
 
 <div class="container ericpol-footer">
     <div class="col-md-4" align="left">
-        <div class="title">РљРѕРЅС‚Р°РєС‚С‹</div>
+        <div class="title">Контакты</div>
         <ul>
             <li>+375(25)123-45-67</li>
             <li>shop@jama.com</li>
-            <li>СѓР». Р”РµСЂР¶РёРЅСЃРєРѕРіРѕ, Рґ.52</li>
+            <li>ул. Держинского, д.52</li>
         </ul>
     </div>
     <div class="col-md-4" align="center">
-        <div class="title">РўРµС…. РїРѕРґРґРµСЂР¶РєР°</div>
+        <div class="title">Тех. поддержка</div>
         <ul>
             <li>+375(162)98-76-54</li>
             <li>support@jama.com</li>

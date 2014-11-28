@@ -21,6 +21,10 @@ public class Type implements Serializable{
     @NotNull
     private String title;
 
+    @Column(name = "key")
+    @NotNull
+    private String key;
+
     @OneToMany(mappedBy = "type")
     private Set<Good> goods;
 
@@ -33,6 +37,9 @@ public class Type implements Serializable{
     public void setTitle(String title) {
         this.title = title;
     }
+    public void setKey(String key) {
+        this.key = key;
+    }
     public void setGoods(Set<Good> goods) {
         this.goods = goods;
     }
@@ -42,6 +49,9 @@ public class Type implements Serializable{
     }
     public String getTitle(){
         return title;
+    }
+    public String getKey(){
+        return key;
     }
     public Set<Good> getGoods() {
         return goods;

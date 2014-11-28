@@ -6,6 +6,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.classic.Session;
 import org.hibernate.engine.JoinSequence;
 
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetDecoder;
+import java.nio.charset.CharsetEncoder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -154,6 +161,26 @@ public class DataBase implements IDataBase{
     }
 
     /**
+     * Получить список товаров по указанной цене
+     *
+     * @param list список
+     * @param min_price минимальная цена
+     * @param max_price максимальная цена
+     * @return коллекция
+     */
+    @Override
+    public List<Good> getGoodsBetweenPrice(List<Good> list, double min_price, double max_price) {
+        List<Good> result = new ArrayList<Good>();
+        for(Good good : list){
+            double price = good.getPrice();
+            if( price <= max_price && price >=min_price )
+                result.add(good);
+
+        }
+        return result;
+    }
+
+    /**
      * Поиск товара по бренду
      *
      * @param brandName название бренда
@@ -174,8 +201,26 @@ public class DataBase implements IDataBase{
      */
     @Override
     public List<Good> searchItemsByType(String typeName) {
-        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.title=\""+typeName+"\")").addEntity(Good.class).list();
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.key=\""+typeName+"\")").addEntity(Good.class).list();
         return list;
+    }
+
+    /**
+     * Поиск товара по типу и бренду
+     *
+     * @param brandName название бренда
+     * @param typeName тип
+     * @return коллекция
+     */
+    @Override
+    public List<Good> searchItemsByBrandAndType(String brandName, String typeName) {
+        if (brandName == null && typeName == null)
+            return this.getGoodsInInterval(0,0);
+        if ( brandName == null )
+            return this.searchItemsByType(typeName);
+        if ( typeName == null )
+            return this.searchItemsByBrand(brandName);
+        return (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.key=\""+typeName+"\") AND brand_id=(SELECT id FROM onlineshop_db.brand WHERE brand.title=\""+brandName+"\")").addEntity(Good.class).list();
     }
 
     /**
