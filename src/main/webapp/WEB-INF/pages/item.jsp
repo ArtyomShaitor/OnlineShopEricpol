@@ -5,7 +5,7 @@
   Time: 12:57
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=CP1251" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
@@ -17,11 +17,14 @@
     <form method="post" action="<c:url value="/${action}" />" enctype="multipart/form-data">
         <table>
             <tr>
-                <td>РќР°Р·РІР°РЅРёРµ</td>
-                <td> <input type="text" name="title" value="${mainItem.title}" /> </td>
+                <td>Название</td>
+                <td>
+                    <input type="text" name="title" value="${mainItem.title}" />
+                    <input type="hidden" name="ID" value="${ID}" />
+                </td>
             </tr>
             <tr>
-                <td>РўРёРї</td>
+                <td>Тип</td>
                 <td>
                     <select name="type_id">
                     <c:forEach items="${typeList}" var="item">
@@ -38,7 +41,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Р‘СЂРµРЅРґ</td>
+                <td>Бренд</td>
                 <td>
                     <select name="brand_id">
                         <c:forEach items="${brandList}" var="item">
@@ -55,17 +58,17 @@
                 </td>
             </tr>
             <tr>
-                <td>РћРїРёСЃР°РЅРёРµ</td>
+                <td>Описание</td>
                 <td>
-                    <textarea name="description" placeholder="РћРїРёСЃР°РЅРёРµ">${mainItem.description}</textarea>
+                    <textarea name="description" placeholder="Описание">${mainItem.description}</textarea>
                 </td>
             </tr>
             <tr>
-                <td>Р¦РµРЅР°</td>
+                <td>Цена</td>
                 <td><input type="text" name="price" value="${mainItem.price}" /> </td>
             </tr>
             <tr>
-                <td>РР·РѕР±СЂР°Р¶РµРЅРёРµ</td>
+                <td>Изображение</td>
                 <td>
                     <c:choose>
                         <c:when test="${mainItem.cover_url != null}">

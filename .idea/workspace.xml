@@ -23,17 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="3842">
-              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33240998" vertical-offset="3127" max-vertical-offset="4131">
+              <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1003#1004#0" expanded="true" />
                 <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#7807#7808#0" expanded="true" />
-                <element signature="e#7876#7877#0" expanded="true" />
+                <element signature="e#8608#8609#0" expanded="true" />
+                <element signature="e#8677#8678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,25 +49,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataBase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3591954" vertical-offset="1711" max-vertical-offset="4607">
-              <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4531" max-vertical-offset="4879">
+              <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
               <folding>
-                <marker date="1417357404654" expanded="true" signature="2871:2913" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="3207:3239" placeholder="SELECT * FRO..type..." />
-                <marker date="1417357404654" expanded="true" signature="3494:3527" placeholder="SELECT * FRO..brand..." />
-                <marker date="1417357404654" expanded="true" signature="3879:3911" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="4848:4968" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="4897:4967" placeholder="SELECT id FR..brand..." />
-                <marker date="1417357404654" expanded="true" signature="5288:5402" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="5336:5401" placeholder="SELECT id FR..type..." />
-                <marker date="1417357404654" expanded="true" signature="6039:6239" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="6087:6152" placeholder="SELECT id FR..type..." />
-                <marker date="1417357404654" expanded="true" signature="6168:6238" placeholder="SELECT id FR..brand..." />
-                <marker date="1417357404654" expanded="true" signature="6764:6814" placeholder="SELECT * FRO..good..." />
-                <marker date="1417357404654" expanded="true" signature="7129:7192" placeholder="SELECT * FRO..good..." />
+                <element signature="e#4693#4723#0" expanded="true" />
+                <marker date="1417363092489" expanded="true" signature="2871:2913" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="3207:3239" placeholder="SELECT * FRO..type..." />
+                <marker date="1417363092489" expanded="true" signature="3494:3527" placeholder="SELECT * FRO..brand..." />
+                <marker date="1417363092489" expanded="true" signature="3879:3911" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="4848:4968" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="4897:4967" placeholder="SELECT id FR..brand..." />
+                <marker date="1417363092489" expanded="true" signature="5288:5402" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="5336:5401" placeholder="SELECT id FR..type..." />
+                <marker date="1417363092489" expanded="true" signature="6039:6239" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="6087:6152" placeholder="SELECT id FR..type..." />
+                <marker date="1417363092489" expanded="true" signature="6168:6238" placeholder="SELECT id FR..brand..." />
+                <marker date="1417363092489" expanded="true" signature="6764:6814" placeholder="SELECT * FRO..good..." />
+                <marker date="1417363092489" expanded="true" signature="7129:7192" placeholder="SELECT * FRO..good..." />
               </folding>
             </state>
           </provider>
@@ -86,8 +87,8 @@
       <file leaf-file-name="item.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.8846154" vertical-offset="272" max-vertical-offset="1802">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="119" max-vertical-offset="1853">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -150,11 +151,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/onlineshop-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/panel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/catalog.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/classes/Good.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java" />
       </list>
     </option>
   </component>
@@ -318,11 +319,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,6 +342,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -885,12 +890,12 @@
       <workItem from="1417171718535" duration="20725000" />
       <workItem from="1417341237152" duration="5047000" />
       <workItem from="1417347364281" duration="529000" />
-      <workItem from="1417348206252" duration="9340000" />
+      <workItem from="1417348206252" duration="13013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114127000" />
+    <option name="totallyTimeSpent" value="117800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -915,7 +920,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38740158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38740158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -983,18 +988,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java</url>
-          <line>183</line>
+          <line>180</line>
           <properties />
-          <option name="timeStamp" value="41" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java</url>
-          <line>114</line>
+          <line>281</line>
           <properties />
-          <option name="timeStamp" value="42" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="46" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1034,8 +1039,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#7807#7808#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8677#8678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,8 +1084,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#7807#7808#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8677#8678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1124,8 +1129,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#7807#7808#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8677#8678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1169,8 +1174,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#7807#7808#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8677#8678#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1305,13 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.1.RELEASE/spring-webmvc-4.1.1.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37179488" vertical-offset="1140" max-vertical-offset="3536">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2576" max-vertical-offset="3298">
@@ -1352,14 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.8846154" vertical-offset="272" max-vertical-offset="1802">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.1.RELEASE/spring-webmvc-4.1.1.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.0" vertical-offset="1719" max-vertical-offset="2244">
@@ -1384,6 +1374,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/item.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="119" max-vertical-offset="1853">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/catalog.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="4233">
@@ -1392,46 +1390,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="3842">
-          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4531" max-vertical-offset="4879">
+          <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#7807#7808#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
+            <element signature="e#4693#4723#0" expanded="true" />
+            <marker date="1417363092489" expanded="true" signature="2871:2913" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="3207:3239" placeholder="SELECT * FRO..type..." />
+            <marker date="1417363092489" expanded="true" signature="3494:3527" placeholder="SELECT * FRO..brand..." />
+            <marker date="1417363092489" expanded="true" signature="3879:3911" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="4848:4968" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="4897:4967" placeholder="SELECT id FR..brand..." />
+            <marker date="1417363092489" expanded="true" signature="5288:5402" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="5336:5401" placeholder="SELECT id FR..type..." />
+            <marker date="1417363092489" expanded="true" signature="6039:6239" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="6087:6152" placeholder="SELECT id FR..type..." />
+            <marker date="1417363092489" expanded="true" signature="6168:6238" placeholder="SELECT id FR..brand..." />
+            <marker date="1417363092489" expanded="true" signature="6764:6814" placeholder="SELECT * FRO..good..." />
+            <marker date="1417363092489" expanded="true" signature="7129:7192" placeholder="SELECT * FRO..good..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.1.RELEASE/spring-web-4.1.1.RELEASE.jar!/org/springframework/web/bind/annotation/support/HandlerMethodInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="274" max-vertical-offset="1649">
+        <state vertical-scroll-proportion="-4.32" vertical-offset="266" max-vertical-offset="1649">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/DataBase/DataBase.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.1.RELEASE/spring-webmvc-4.1.1.RELEASE.jar!/org/springframework/web/servlet/mvc/annotation/AnnotationMethodHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3591954" vertical-offset="1711" max-vertical-offset="4607">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.36" vertical-offset="1133" max-vertical-offset="3536">
+          <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33240998" vertical-offset="3127" max-vertical-offset="4131">
+          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding>
-            <marker date="1417357404654" expanded="true" signature="2871:2913" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="3207:3239" placeholder="SELECT * FRO..type..." />
-            <marker date="1417357404654" expanded="true" signature="3494:3527" placeholder="SELECT * FRO..brand..." />
-            <marker date="1417357404654" expanded="true" signature="3879:3911" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="4848:4968" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="4897:4967" placeholder="SELECT id FR..brand..." />
-            <marker date="1417357404654" expanded="true" signature="5288:5402" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="5336:5401" placeholder="SELECT id FR..type..." />
-            <marker date="1417357404654" expanded="true" signature="6039:6239" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="6087:6152" placeholder="SELECT id FR..type..." />
-            <marker date="1417357404654" expanded="true" signature="6168:6238" placeholder="SELECT id FR..brand..." />
-            <marker date="1417357404654" expanded="true" signature="6764:6814" placeholder="SELECT * FRO..good..." />
-            <marker date="1417357404654" expanded="true" signature="7129:7192" placeholder="SELECT * FRO..good..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8677#8678#0" expanded="true" />
           </folding>
         </state>
       </provider>

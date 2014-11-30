@@ -278,4 +278,20 @@ public class DataBase implements IDataBase{
         session.getTransaction().commit();
     }
 
+    public void editGood(Long id, String title, Long type_id, String description, double price, Long admin_id, Long brand_id, String cover_url){
+        session.beginTransaction();
+        Good good = this.getCatalogItem(id);
+        good.setTitle(title);
+        good.setType(type_id);
+        good.setBrand(brand_id);
+        good.setAdmin(admin_id);
+        good.setDescription(description);
+        good.setPrice(price);
+//
+        if(cover_url.length() != 0)
+            good.setCover_url(cover_url);
+        session.update(good);
+        session.getTransaction().commit();
+    }
+
 }

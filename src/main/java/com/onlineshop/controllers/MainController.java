@@ -143,10 +143,11 @@ public class MainController implements ServletContextAware {
 
         if (params.get("error") == null || params.get("error") == "")
             model.addAttribute("error", "");
-        else model.addAttribute("error", "Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё РёР·РѕР±СЂР°Р¶РµРЅРёРµ");
+        else model.addAttribute("error", "Вы не выбрали изображение");
 
-        model.addAttribute("Title", "Р”РѕР±Р°РІРёС‚СЊ");
-        model.addAttribute("submitValue", "Р”РѕР±Р°РІРёС‚СЊ");
+        model.addAttribute("ID", Long.valueOf(0));
+        model.addAttribute("Title", "Добавить");
+        model.addAttribute("submitValue", "Добавить");
         model.addAttribute("typeList", typeList);
         model.addAttribute("brandList", brandList);
         model.addAttribute("mainItem", good);
@@ -161,8 +162,9 @@ public class MainController implements ServletContextAware {
 
         Good good = db.getCatalogItem(id);
 
-        model.addAttribute("Title", "РР·РјРµРЅРёС‚СЊ");
-        model.addAttribute("submitValue", "РЎРѕС…СЂР°РЅРёС‚СЊ");
+        model.addAttribute("ID", id);
+        model.addAttribute("Title", "Изменить");
+        model.addAttribute("submitValue", "Сохранить");
         model.addAttribute("typeList", typeList);
         model.addAttribute("brandList", brandList);
         model.addAttribute("mainItem", good);
@@ -171,8 +173,23 @@ public class MainController implements ServletContextAware {
     }
 
 
-    @RequestMapping(value = "/EditItem", method = RequestMethod.GET)
-    public String editItemScript(@RequestParam Map<String, String> allRequestParams, Model model){
+    @RequestMapping(value = "/EditItem", method = RequestMethod.POST)
+    public String editItemScript(@RequestParam Map<String, String> p,
+                                 @RequestParam(value = "cover_url", required = false) MultipartFile image,
+                                 Model model) throws IOException {
+
+        Long id = Long.valueOf(p.get("ID"));
+        String title = p.get("title");
+        Long type_id = Long.valueOf(p.get("type_id"));
+        String description = p.get("description");
+        Double price = Double.valueOf(p.get("price"));
+        Long admin_id = Long.valueOf(1);
+        Long brand_id = Long.valueOf(p.get("brand_id"));
+        String filename = image.getOriginalFilename();
+
+        db.editGood(id, title, type_id, description, price, admin_id, brand_id, filename);
+        if(filename.length() != 0)
+            saveImage(filename, image);
 
         return "redirect:/Admin/Panel";
     }
