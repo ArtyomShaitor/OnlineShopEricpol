@@ -112,7 +112,15 @@ public class DataBase implements IDataBase{
      */
     @Override
     public void addGood(String title, Long type_id, String description, double price, Long admin_id, Long brand_id, String cover_url) {
-
+        Good good = new Good();
+        good.setTitle(title);
+        good.setType(type_id);
+        good.setBrand(brand_id);
+        good.setAdmin(admin_id);
+        good.setDescription(description);
+        good.setPrice(price);
+        good.setCover_url(cover_url);
+        addObject(good);
     }
 
     /**
@@ -122,7 +130,8 @@ public class DataBase implements IDataBase{
      */
     @Override
     public void removeGood(Long id) {
-
+        Good good = (Good) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE id="+id.toString()).addEntity(Good.class).list().get(0);
+        if(good != null) removeObject(good);
     }
 
     /**
@@ -252,6 +261,7 @@ public class DataBase implements IDataBase{
         return list.get(0);
     }
 
+
     /**
      * Начало транзакции, добавление объекта obj в БД, заверешние транзакции
      * @param obj Объект
@@ -259,6 +269,12 @@ public class DataBase implements IDataBase{
     private void addObject(Object obj){
         session.beginTransaction();
         session.save(obj);
+        session.getTransaction().commit();
+    }
+
+    private void removeObject(Object obj){
+        session.beginTransaction();
+        session.delete(obj);
         session.getTransaction().commit();
     }
 

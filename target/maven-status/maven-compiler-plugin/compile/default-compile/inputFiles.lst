@@ -2,7 +2,8 @@ D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Admin.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\DataBase.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\controllers\MainController.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Good.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\controllers\AdminController.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\HibernateUtil.java
-D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Type.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Brand.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Type.java
 D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\IDataBase.java

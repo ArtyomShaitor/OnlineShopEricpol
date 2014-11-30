@@ -128,4 +128,5 @@ public interface IDataBase {
      * @return объект
      */
     public Good getCatalogItem(Long id);
+
 }
