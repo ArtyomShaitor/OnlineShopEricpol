@@ -86,6 +86,20 @@
             <!--<version>4.0.1.Final</version>-->
             <!--<classifier>tests</classifier>-->
         <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>com.googlecode.json-simple</groupId>-->
+            <!--<artifactId>json-simple</artifactId>-->
+            <!--<version>1.1.1</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.0-api</artifactId>
@@ -181,6 +195,7 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
         </dependency>
+
 
     </dependencies>
 

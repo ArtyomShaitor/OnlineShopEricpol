@@ -108,15 +108,6 @@ public class Good implements Serializable{
     public void setId(Long id){
         this.id = id;
     }
-//    public void setType_id(Long id){
-//        type.setId(id);
-//    }
-//    public void setAdmin_id(Long id){
-//        this.admin.setId(id);
-//    }
-//    public void setBrand_id(Long id){
-//        this.brand.setId(id);
-//    }
     public void setPrice(double price){
         this.price = price;
     }
@@ -145,15 +136,7 @@ public class Good implements Serializable{
     public double getPrice(){
         return price;
     }
-//    public Set getAdmins(){
-//        return admins;
-//    }
-//    public Set getBrand(){
-//        return brands;
-//    }
-//    public Set getType(){
-//        return types;
-//    }
+
     public String getTitle(){
         return title;
     }

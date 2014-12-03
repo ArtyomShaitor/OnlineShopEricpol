@@ -210,7 +210,7 @@ public class DataBase implements IDataBase{
      */
     @Override
     public List<Good> searchItemsByType(String typeName) {
-        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.key=\""+typeName+"\")").addEntity(Good.class).list();
+        List<Good> list = (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.title_key=\""+typeName+"\")").addEntity(Good.class).list();
         return list;
     }
 
@@ -229,7 +229,7 @@ public class DataBase implements IDataBase{
             return this.searchItemsByType(typeName);
         if ( typeName == null )
             return this.searchItemsByBrand(brandName);
-        return (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.key=\""+typeName+"\") AND brand_id=(SELECT id FROM onlineshop_db.brand WHERE brand.title=\""+brandName+"\")").addEntity(Good.class).list();
+        return (List<Good>) session.createSQLQuery("SELECT * FROM onlineshop_db.good WHERE type_id=(SELECT id FROM onlineshop_db.type WHERE type.title_key=\""+typeName+"\") AND brand_id=(SELECT id FROM onlineshop_db.brand WHERE brand.title=\""+brandName+"\")").addEntity(Good.class).list();
     }
 
     /**

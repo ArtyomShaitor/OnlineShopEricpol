@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.multipart.MultipartFile;
 
+import org.json.simple.JSONObject;
+
 import javax.servlet.ServletContext;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.io.File;
@@ -90,6 +93,21 @@ public class MainController implements ServletContextAware {
         return "catalog";
     }
 
+    @RequestMapping(value = "/throwIntoCart", method = RequestMethod.GET)
+    @ResponseBody
+    public String throwIntoCart(@RequestParam Map<String, String> params){
+        Long id = Long.valueOf(params.get("id"));
+        Good good = db.getCatalogItem(id);
+
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", good.getId());
+        jsonObject.put("title", good.getTitle());
+        jsonObject.put("price", good.getPrice());
+
+        String json = jsonObject.toJSONString();
+        return json;
+    }
+
     @RequestMapping(value = "/Catalog/Product/{id}", method = RequestMethod.GET)
     public String catalogItemPage(@PathVariable Long id, Model model){
         Good good = db.getCatalogItem(id);
@@ -97,8 +115,9 @@ public class MainController implements ServletContextAware {
         return "catalog-item";
     }
 
-    @RequestMapping(value = "/Search/{query}", method = RequestMethod.GET)
-    public String searchByQuery(@PathVariable String query, Model model){
+    @RequestMapping(value = "/Search", method = RequestMethod.GET)
+    public String searchByQuery( @RequestParam Map<String, String> params, Model model){
+        String query = params.get("Query");
         List<Good> list = db.searchItemsByQuery(query);
         List<Type> listType = db.getTypesList();
         List<Brand> listBrand = db.getBrandsList();
@@ -143,11 +162,11 @@ public class MainController implements ServletContextAware {
 
         if (params.get("error") == null || params.get("error") == "")
             model.addAttribute("error", "");
-        else model.addAttribute("error", "Вы не выбрали изображение");
+        else model.addAttribute("error", "Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё РёР·РѕР±СЂР°Р¶РµРЅРёРµ");
 
         model.addAttribute("ID", Long.valueOf(0));
-        model.addAttribute("Title", "Добавить");
-        model.addAttribute("submitValue", "Добавить");
+        model.addAttribute("Title", "Р”РѕР±Р°РІРёС‚СЊ");
+        model.addAttribute("submitValue", "РЎРѕС…СЂР°РЅРёС‚СЊ");
         model.addAttribute("typeList", typeList);
         model.addAttribute("brandList", brandList);
         model.addAttribute("mainItem", good);
@@ -163,8 +182,8 @@ public class MainController implements ServletContextAware {
         Good good = db.getCatalogItem(id);
 
         model.addAttribute("ID", id);
-        model.addAttribute("Title", "Изменить");
-        model.addAttribute("submitValue", "Сохранить");
+        model.addAttribute("Title", "РР·РјРµРЅРёС‚СЊ");
+        model.addAttribute("submitValue", "РЎРѕС…СЂР°РЅРёС‚СЊ");
         model.addAttribute("typeList", typeList);
         model.addAttribute("brandList", brandList);
         model.addAttribute("mainItem", good);

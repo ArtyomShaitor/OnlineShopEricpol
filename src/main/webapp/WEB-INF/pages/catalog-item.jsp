@@ -21,10 +21,22 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="../../res/prefixfree.min.js"></script>
 
+    <script src="<c:url value="/res/events.js" />"></script>
+
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&amp;subset=latin,cyrillic-ext"
           rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<div class="container" style="position: relative;">
+    <div class="ericpol-cart close">
+        <table class="table table-striped table-hover">
+
+        </table>
+        <input class="in-bucket" id="in-bucket" style="width:100%; margin:0px;" type="button" value="Оплатить"/>
+    </div>
+</div>
+
 <div class="navbar navbar-default navbar-static-top navbar-inverse ericpol-header">
     <div class="container">
         <div class="navbar-header">
@@ -47,7 +59,7 @@
                     <a href="<c:url value="/Catalog"/>">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">Корзина</a>
+                    <a href="#" name="cart" >Корзина</a>
                 </li>
             </ul>
         </div>
@@ -70,7 +82,7 @@
 </div>
 
 <div class="container">
-    <input class="in-bucket" type="button" value="В корзину"/>
+    <input class="in-bucket" id="${item.id}" type="button" value="В корзину"/>
 </div>
 
 

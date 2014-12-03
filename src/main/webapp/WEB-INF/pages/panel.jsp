@@ -5,7 +5,7 @@
   Time: 11:51
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=CP1251" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
@@ -16,26 +16,26 @@
 <body>
     Hello, Admin!
     <br/>
-    <a href="/logout">Выйти</a>
+    <a href="/logout">Р’С‹Р№С‚Рё</a>
     <br>
     <br/>
-    <a href="<c:url value="/Admin/Panel/Add" />">Добавить</a>
+    <a href="<c:url value="/Admin/Panel/Add" />">Р”РѕР±Р°РІРёС‚СЊ</a>
     <br/>
     <br/>
-    Список товаров:
+    РЎРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ:
     <table>
         <tr>
             <td>id</td>
-            <td>Название</td>
-            <td>Опции</td>
+            <td>РќР°Р·РІР°РЅРёРµ</td>
+            <td>РћРїС†РёРё</td>
         </tr>
     <c:forEach items="${itemList}" var="item">
         <tr>
             <td>${item.id}</td>
             <td>${item.title}</td>
             <td>
-                <a href="<c:url value="/Admin/Panel/Edit/${item.id}" />">Изменить</a>
-                <a href="<c:url value="/Admin/Panel/Delete/${item.id}" />">Удалить</a>
+                <a href="<c:url value="/Admin/Panel/Edit/${item.id}" />">РР·РјРµРЅРёС‚СЊ</a>
+                <a href="<c:url value="/Admin/Panel/Delete/${item.id}" />">РЈРґР°Р»РёС‚СЊ</a>
             </td>
         </tr>
     </c:forEach>

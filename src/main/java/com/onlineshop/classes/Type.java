@@ -21,7 +21,7 @@ public class Type implements Serializable{
     @NotNull
     private String title;
 
-    @Column(name = "key")
+    @Column(name = "title_key")
     @NotNull
     private String key;
 
@@ -50,9 +50,11 @@ public class Type implements Serializable{
     public String getTitle(){
         return title;
     }
-    public String getKey(){
+
+    public String getKey() {
         return key;
     }
+
     public Set<Good> getGoods() {
         return goods;
     }

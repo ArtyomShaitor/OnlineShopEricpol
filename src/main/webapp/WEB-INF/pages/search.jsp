@@ -21,6 +21,8 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="<c:url value="/res/prefixfree.min.js"/>"></script>
 
+    <script src="<c:url value="/res/events.js" />"></script>
+
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&amp;subset=latin,cyrillic-ext"
           rel="stylesheet" type="text/css">
 </head>
@@ -48,7 +50,7 @@
                     <a href="<c:url value="/Catalog"/>">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">Корзина</a>
+                    <a href="#" name="cart">Корзина</a>
                 </li>
             </ul>
         </div>
@@ -56,9 +58,9 @@
 </div>
 
 <div class="container ericpol-catalog-container">
-    <form class="ericpol-search container">
+    <form class="ericpol-search container" method="get" action="<c:url value="/Search"/>">
         <div>
-            <input type="text" class="" placeholder="Поиск товара" value="${queryText}"><input type="submit" value="Поиск"/>
+            <input type="text" class="" name="Query" placeholder="Поиск товара" value="${queryText}"><input type="submit" value="Поиск"/>
         </div>
     </form>
 

@@ -5,5 +5,4 @@ com\onlineshop\DataBase\IDataBase.class
 com\onlineshop\classes\Good.class
 com\onlineshop\DataBase\HibernateUtil.class
 com\onlineshop\DataBase\DataBase.class
-com\onlineshop\controllers\AdminController.class
 com\onlineshop\classes\Type.class
