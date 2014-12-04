@@ -1,16 +1,26 @@
 package com.onlineshop.controllers;
 
-import com.onlineshop.classes.DataBase;
+import com.onlineshop.DataBase.DataBase;
+import com.onlineshop.classes.Good;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.List;
+
+//<<<<<<< HEAD
+//=======
+//>>>>>>> dcf32c07c95fcf4729fe086e27462473fa7fa5ca
 
 /**
  * Created by Artyom on 10.11.2014.
  */
 @Controller
 public class MainController {
+
+    private DataBase db = new DataBase();
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String indexPage() {
@@ -29,8 +39,15 @@ public class MainController {
 
     @RequestMapping(value = "/Test")
     public String testPage(){
-        DataBase db = new DataBase();
-        db.addType("Laptop3");
+
+        return "test";
+    }
+
+    @RequestMapping(value = "/Brand/{brand}", method = RequestMethod.GET)
+    public String brandPage(@PathVariable String brand, Model model){
+        List<Good> list = db.searchItemsByBrand(brand);
+
+        model.addAttribute("itemList", list);
         return "test";
     }
 

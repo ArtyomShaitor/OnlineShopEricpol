@@ -92,7 +92,8 @@
     <div class="carousel-inner">
 
         <div class="item active" style="background-image: url(res/apple-imac-brend-stol.jpg);">
-            <!--<img src="res/apple-imac-brend-stol.jpg">-->
+            <%--<img src="res/apple-imac-brend-stol.jpg">--%>
+
             <div class="carousel-caption">
             </div>
         </div>

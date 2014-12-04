@@ -45,7 +45,7 @@ public class Admin implements Serializable{
     public void setPassword(String password) {
         this.password = password;
     }
-    public void setGoods(Set<Good> goods){
+    public void setGoods(Set goods){
         this.goods = goods;
     }
 
