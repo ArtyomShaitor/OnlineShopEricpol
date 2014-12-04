@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -21,39 +23,53 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="res/prefixfree.min.js"></script>
 
+    <script src="<c:url value="/res/events.js" />"></script>
+
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&amp;subset=latin,cyrillic-ext"
           rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+<div class="container" style="position: relative;">
+    <div class="ericpol-cart close">
+        <table class="table table-striped table-hover">
+
+        </table>
+        <input class="in-bucket" style="width:100%; margin:0px;" type="button" value="Оплатить"/>
+    </div>
+</div>
+
 <div class="navbar navbar-default navbar-static-top navbar-inverse ericpol-header">
     <div class="container">
         <div class="navbar-header">
-            <a type="button" href="http://localhost:8080/" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
-               data-target=".navbar-collapse"><img src="res/menu-button-icon.gif" alt=""></a>
+            <a type="button" class="navbar-toggle ericpol-header-menu-button" data-toggle="collapse"
+               data-target=".navbar-collapse"><img src="<c:url value="/res/menu-button-icon.gif" />" alt=""></a>
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           <span class="navbar-brand">
-            <a href=""><img src="res/logo.png" alt=""></a>
+            <a href=""><img src="<c:url value="/res/logo.png" />" alt=""></a>
           </span>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="ericpol-header-active">
-                    <a href="http://localhost:8080/">Главная</a>
+                    <a href="<c:url value="/" />">Главная</a>
                 </li>
                 <li>
-                    <a href="http://localhost:8080/Catalog">Каталог</a>
+                    <a href="<c:url value="/Catalog" />">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">Корзина</a>
+                    <a href="#" name="cart">Корзина</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
+
 
 <div class="hero-unit container ericpol-possib" align="center">
 
@@ -76,7 +92,7 @@
 
 </div>
 
-<form class="ericpol-search container">
+<form class="ericpol-search container"  method="get" action="<c:url value="/Search"/>">
     <div>
         <input type="text" class="" placeholder="Поиск товара"><input type="submit" value="Поиск"/>
     </div>
@@ -121,8 +137,8 @@
     <div class="hero-unit">
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
-                <li role="presentation"><a href="">Apple</a></li>
-                <li role="presentation"><a href="">Acer</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog?Brand=Apple" />">Apple</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog?Brand=Acer" />">Acer</a></li>
                 <li role="presentation"><a href="">Asus</a></li>
                 <li role="presentation"><a href="">Toshiba</a></li>
             </ul>
@@ -184,7 +200,7 @@
         <div class="col-md-3 nav">
             <ul class="list-unstyled">
                 <li role="presentation"><a href="">Компьютеры</a></li>
-                <li role="presentation"><a href="">Ноутбуки</a></li>
+                <li role="presentation"><a href="<c:url value="/Catalog?Type=Laptops" />">Ноутбуки</a></li>
                 <li role="presentation"><a href="">Моноблоки</a></li>
                 <li role="presentation"><a href="">Сумки</a></li>
             </ul>
@@ -210,14 +226,20 @@
         </ul>
     </div>
     <div class="col-md-4" align="right">
-        <img src="res/logo-footer.png" alt="">
+        <img src="<c:url value="/res/logo-footer.png" />" alt="">
         <br>Designed by
         <br>
-        <a href="https://github.com/ArtyomShaitor/OnlineShopEricpol/"><img src="res/github-icon.png" alt="">Ericpol Probationers</a>
+        <a href="https://github.com/ArtyomShaitor/OnlineShopEricpol/"><img src="<c:url value="/res/github-icon.png" />" alt="">Ericpol Probationers</a>
     </div>
 </div>
 <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $(".navbar-brand a").click(function(){
+        return false;
+    })
 
+
+</script>
 </body>
 
 </html>

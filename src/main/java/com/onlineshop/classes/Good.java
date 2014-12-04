@@ -79,30 +79,38 @@ public class Good implements Serializable{
     public Good(){
     }
 
+
+
+    public void setType(){
+        this.type = new Type();
+    }
+    public void setType(Long type_id){
+        this.type = new Type();
+        this.type.setId(type_id);
+    }
+
+    public void setBrand(){
+        this.brand = new Brand();
+    }
+    public void setBrand(Long brand_id){
+        this.brand = new Brand();
+        this.brand.setId(brand_id);
+    }
+
+    public void setAdmin(){
+        this.admin = new Admin();
+    }
+    public void setAdmin(Long admin_id){
+        this.admin = new Admin();
+        this.admin.setId(admin_id);
+    }
+
     public void setId(Long id){
         this.id = id;
-    }
-    public void setType_id(Long id){
-        type.setId(id);
-    }
-    public void setAdmin_id(Long id){
-        this.admin.setId(id);
-    }
-    public void setBrand_id(Long id){
-        this.brand.setId(id);
     }
     public void setPrice(double price){
         this.price = price;
     }
-//    public void setAdmins(Set admins){
-//        this.admins = admins;
-//    }
-//    public void setBrand(Set brand) {
-//        this.brands = brand;
-//    }
-//    public void setType(Set type) {
-//        this.types = type;
-//    }
     public void setTitle(String title){
         this.title = title;
     }
@@ -128,15 +136,7 @@ public class Good implements Serializable{
     public double getPrice(){
         return price;
     }
-//    public Set getAdmins(){
-//        return admins;
-//    }
-//    public Set getBrand(){
-//        return brands;
-//    }
-//    public Set getType(){
-//        return types;
-//    }
+
     public String getTitle(){
         return title;
     }

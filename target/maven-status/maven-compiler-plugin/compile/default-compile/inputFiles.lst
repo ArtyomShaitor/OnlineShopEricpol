@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\classes\Good.java
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\controllers\MainController.java
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\DataBase\HibernateUtil.java
@@ -6,3 +7,13 @@ C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\Dat
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\classes\Admin.java
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\classes\Type.java
 C:\Users\Дарья\Documents\OnlineShopEricpol\src\main\java\com\onlineshop\classes\Brand.java
+=======
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Admin.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\DataBase.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\controllers\MainController.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Good.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\HibernateUtil.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Type.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\classes\Brand.java
+D:\Projects\OnlineShop\src\main\java\com\onlineshop\DataBase\IDataBase.java
+>>>>>>> 1e50ef640b6b8cf5e4562d5384774033463166af
